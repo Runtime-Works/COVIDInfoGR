@@ -32,5 +32,6 @@ By sliding up (or by selecting World Stats from the slider) we get to the world 
 Feel free to use any part of the code. If you have any thoughts or recommendations about the code or the project in general, let us know.
 
 
-Nick Georgedakis 
-Mike Ladas 
+-Nick Georgedakis
+
+-Mike Ladas 
