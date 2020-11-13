@@ -1,0 +1,28 @@
+[
+  {
+    "featureType": "all",
+    "stylers": [
+      { "color": "#001233" }
+    ]
+  },
+  {
+    "featureType": "administrative",
+    "elementType": "all",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "all",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },
+  {
+    "featureType": "water",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  }
+  ]

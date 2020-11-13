@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#5C677D">
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:measureWithLargestChild="true"
+        android:orientation="horizontal"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/stats_border"
+        android:padding="0dp">
+
+        <TextView
+            android:id="@+id/txtViewRank"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/field"
+            android:paddingStart="35dp"
+            android:paddingLeft="35dp"
+            app:layout_constraintEnd_toStartOf="@+id/txtViewCountry"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            android:id="@+id/txtViewCountry"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/field"
+            android:paddingStart="35dp"
+            app:layout_constraintEnd_toStartOf="@+id/txtViewTotalCases"
+            app:layout_constraintStart_toEndOf="@id/txtViewRank"
+            android:textColor="@color/whiteFont"
+            android:paddingLeft="35dp" />
+        <!--android:background="@drawable/listview_border"
+            android:padding="0dp"-->
+
+        <TextView
+            android:id="@+id/txtViewTotalCases"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/field"
+            android:paddingStart="25dp"
+            app:layout_constraintEnd_toStartOf="@+id/txtViewNewCases"
+            app:layout_constraintStart_toEndOf="@+id/txtViewCountry"
+            android:textColor="@color/whiteFont"
+            android:paddingLeft="25dp" />
+
+        <TextView
+            android:id="@+id/txtViewNewCases"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/whiteFont"
+            android:text="@string/field"
+            android:paddingStart="35dp"
+            app:layout_constraintEnd_toStartOf="@+id/txtViewTotalDeaths"
+            app:layout_constraintStart_toEndOf="@+id/txtViewTotalCases"
+            android:paddingLeft="35dp" />
+
+        <TextView
+            android:id="@+id/txtViewTotalDeaths"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/whiteFont"
+            android:text="@string/field"
+            android:paddingStart="35dp"
+            app:layout_constraintEnd_toStartOf="@+id/txtViewNewDeaths"
+            app:layout_constraintStart_toEndOf="@+id/txtViewNewCases"
+            android:paddingLeft="35dp" />
+
+        <TextView
+            android:id="@+id/txtViewNewDeaths"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/whiteFont"
+            android:text="@string/field"
+            android:paddingStart="35dp"
+            app:layout_constraintEnd_toStartOf="@+id/txtViewTotalRecovered"
+            app:layout_constraintStart_toEndOf="@+id/txtViewTotalDeaths"
+            android:paddingLeft="35dp" />
+
+        <TextView
+            android:id="@+id/txtViewTotalRecovered"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/whiteFont"
+            android:text="@string/field"
+            android:paddingStart="35dp"
+            app:layout_constraintEnd_toStartOf="@+id/txtViewNewRecovered"
+            app:layout_constraintStart_toEndOf="@+id/txtViewNewDeaths"
+            android:paddingLeft="35dp" />
+
+        <TextView
+            android:id="@+id/txtViewNewRecovered"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/whiteFont"
+            android:text="@string/field"
+            android:paddingStart="35dp"
+            app:layout_constraintEnd_toStartOf="@+id/txtViewActiveCases"
+            app:layout_constraintStart_toEndOf="@+id/txtViewTotalRecovered"
+            android:paddingLeft="35dp" />
+
+        <TextView
+            android:id="@+id/txtViewActiveCases"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/whiteFont"
+            android:text="@string/field"
+            android:paddingStart="35dp"
+            app:layout_constraintEnd_toStartOf="@+id/txtViewActiveSeriousCritical"
+            app:layout_constraintStart_toEndOf="@+id/txtViewNewRecovered"
+            android:paddingLeft="35dp" />
+
+        <TextView
+            android:id="@+id/txtViewActiveSeriousCritical"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/whiteFont"
+            android:text="@string/field"
+            android:paddingStart="35dp"
+            app:layout_constraintEnd_toStartOf="@+id/txtViewTotCases1Mpop"
+            app:layout_constraintStart_toEndOf="@+id/txtViewActiveCases"
+            android:paddingLeft="35dp" />
+
+        <TextView
+            android:id="@+id/txtViewTotCases1Mpop"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/whiteFont"
+            android:text="@string/field"
+            android:paddingStart="35dp"
+            app:layout_constraintEnd_toStartOf="@+id/txtViewDeaths1Mpop"
+            app:layout_constraintStart_toEndOf="@+id/txtViewActiveSeriousCritical"
+            android:paddingLeft="35dp" />
+
+        <TextView
+            android:id="@+id/txtViewDeaths1Mpop"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/whiteFont"
+            android:text="@string/field"
+            android:paddingStart="35dp"
+            app:layout_constraintEnd_toStartOf="@+id/txtViewTotalTests"
+            app:layout_constraintStart_toEndOf="@+id/txtViewTotCases1Mpop"
+            android:paddingLeft="35dp" />
+
+        <TextView
+            android:id="@+id/txtViewTotalTests"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/whiteFont"
+            android:text="@string/field"
+            android:paddingStart="35dp"
+            app:layout_constraintEnd_toStartOf="@+id/txtViewTests1Mpop"
+            app:layout_constraintStart_toEndOf="@+id/txtViewDeaths1Mpop"
+            android:paddingLeft="35dp" />
+
+        <TextView
+            android:id="@+id/txtViewTests1Mpop"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/whiteFont"
+            android:text="@string/field"
+            android:paddingStart="35dp"
+            app:layout_constraintEnd_toStartOf="@+id/txtViewPopulation"
+            app:layout_constraintStart_toEndOf="@+id/txtViewTotalTests"
+            android:paddingLeft="35dp" />
+
+        <TextView
+            android:id="@+id/txtViewPopulation"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/whiteFont"
+            android:text="@string/field"
+            android:paddingStart="30dp"
+            app:layout_constraintEnd_toStartOf="@+id/txtViewContinent"
+            app:layout_constraintStart_toEndOf="@+id/txtViewTests1Mpop"
+            android:paddingLeft="30dp" />
+
+        <TextView
+            android:id="@+id/txtViewContinent"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/whiteFont"
+            android:text="@string/field"
+            android:paddingStart="30dp"
+            app:layout_constraintEnd_toStartOf="@+id/txtView1CaseeveryXppl"
+            app:layout_constraintStart_toEndOf="@+id/txtViewPopulation"
+            android:paddingLeft="30dp" />
+
+        <TextView
+            android:id="@+id/txtView1CaseeveryXppl"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/whiteFont"
+            android:text="@string/field"
+            android:paddingStart="33dp"
+            app:layout_constraintEnd_toStartOf="@+id/txtView1DeatheveryXppl"
+            app:layout_constraintStart_toEndOf="@+id/txtViewContinent"
+            android:paddingLeft="33dp" />
+
+        <TextView
+            android:id="@+id/txtView1DeatheveryXppl"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/whiteFont"
+            android:text="@string/field"
+            android:paddingStart="55dp"
+            app:layout_constraintEnd_toStartOf="@+id/txtView1TesteveryXppl"
+            app:layout_constraintStart_toEndOf="@+id/txtView1CaseeveryXppl"
+            android:paddingLeft="55dp" />
+
+        <TextView
+            android:id="@+id/txtView1TesteveryXppl"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/whiteFont"
+            android:text="@string/field"
+            android:paddingStart="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/txtView1DeatheveryXppl"
+            android:paddingLeft="40dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
